@@ -19,6 +19,11 @@ against WP Arda-Report's files, wherever it is installed, so updates can be mana
 2. Upload this plugin and **Network-activate ONLY this one**.
 3. Manage WP Arda-Report updates from **Network Admin → Plugins**.
 
+After the first release, this plugin **updates itself** from its own GitHub releases too (under its
+own slug `arda-report-updater`, so it never clashes with WP Arda-Report's `multi-block` slug). Pushing
+a `vX.Y.Z` tag builds `arda-report-updater.zip` and publishes a release the sites pick up; a suffixed
+tag like `v1.1.0-rc.1` is a pre-release the sites ignore.
+
 ## Collision safety
 
 Both this plugin and WP Arda-Report register plugin-update-checker under the slug `multi-block`.
